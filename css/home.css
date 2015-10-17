@@ -3,10 +3,9 @@
   margin: 0; }
 
 body {
-  font-size: 16px;
-  color: #333;
+  color: #626262;
   background-color: #f7f8f9;
-  font-family: "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif; }
+  font: 14px/1.5 "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif; }
 
 a {
   text-decoration: none;
@@ -17,5 +16,15 @@ ul ol {
 
 input, textarea {
   font: inherit; }
+
+.header-wrapper {
+  background-color: #000;
+  background: url(http://davedavehong.b0.upaiyun.com/images/smartisan/top-pumel-bg.jpg) top center no-repeat;
+  width: 100%;
+  height: 100px; }
+  .header-wrapper .header-container {
+    width: 1120px;
+    margin: 0 auto;
+    font-size: 12px; }
 
 /*# sourceMappingURL=home.css.map */
