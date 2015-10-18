@@ -1,20 +1,12 @@
 $width-content: 1120px;
 $upyun-link: 'http://davedavehong.b0.upaiyun.com/images/smartisan/';
-$lists: 11;
-$properties: pp;
-$i: 0;
 @function link($s) {
-  @return 'url(\''+'http://davedavehong.b0.upaiyun.com/images/smartisan/' + $s +'\')'
-}
-
-@mixin background-image-upyun($link-postfix) {
-  $lists: link($link-postfix);
-  background-image: #{$lists};
+  @return 'url(\'http://davedavehong.b0.upaiyun.com/images/smartisan/' + $s + '\')';
 }
 
 .header-wrapper {
   background: #000 no-repeat top center;
-  @include background-image-upyun(top-pumel-bg\.jpg);
+  background-image: unquote(link(top-pumel-bg\.jpg));
   width: 100%;
   height: 100px;
   .header-container {
@@ -26,7 +18,6 @@ $i: 0;
       width: 38px;
       height: 38px;
       padding: 31px 0 0;
-      @include background-image-upyun()
     }
   }
 }
