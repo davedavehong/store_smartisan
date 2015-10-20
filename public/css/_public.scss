@@ -6,15 +6,17 @@
 body {
   color: #626262;
   background-color: #f7f8f9;
-  font:14px/1.5 "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif;
+  font: 14px/1.5 "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif;
 }
-
+div.wrapper {
+  min-width: 1140px;
+}
 a {
   text-decoration: none;
   color: #444;
 }
 
-ul ol{
+ul, ol {
   list-style: none;
 }
 
