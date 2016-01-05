@@ -228,3 +228,108 @@ $upyun-font: 'http://davedavehong.b0.upaiyun.com/fonts/';
   }
 }
 
+.layout-container {
+  min-height: 400px;
+  background: url('#{$upyun-images}con-bg.jpg') top repeat-x #f1f1f1;
+  .content {
+    width: 1120px;
+    min-width: 600px;
+    padding: 20px 0 25px;
+    margin: 0 auto;
+    .banner-art {
+      width: 1124px;
+      height: 478px;
+      background: url("#{$upyun-images}home-art-banner.png") no-repeat;
+      background-image: -webkit-image-set(url("#{$upyun-images}home-art-banner.png") 1x, url("#{$upyun-images}home-art-banner@2x.png") 2x);
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .product-show-box {
+      position: relative;
+      margin-top: 10px;
+      background: #efefef;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, .1) 0 1px 3px, #DCDCDC 0 1px 0, #DDD 0 -1px 0;
+      [class^="item-"] {
+        background-color: #fff;
+        position: relative;
+        a.cover{
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          &:hover{
+            box-shadow: 0 0 38px rgba(0,0,0,.08) inset;
+          }
+        }
+        img {
+          border: 0;
+          position: absolute;
+          margin: 0;
+        }
+        .doodle-label{
+          top: 50px;
+          left: 30px;
+          text-align: center;
+          position: absolute;
+          h2 {
+            font-size: 24px;
+            color: #4c4c4c;
+            line-height: 40px;
+            width: 300px;
+          }
+          h6{
+            font-size: 14px;
+            color: #b2b2b2;
+            line-height: 25px;
+            font-weight:400;
+          }
+          p.price{
+            position: relative;
+            margin: 20px 0 0;
+            font-size: 30px;
+            text-align: center;
+            color: #de4037;
+            line-height: 30px;
+            span{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .item-1 {
+        float: right;
+        width: 373px;
+        height: 641px;
+        margin: 0 0 1px 1px;
+        img.doodle-image {
+          left: 66px;
+          top: 155px;
+          width: 240px;
+          height: 460px;
+        }
+      }
+      .item-2 {
+        float: left;
+        width: 746px;
+        height: 320px;
+        margin: 0 0 1px;
+      }
+      .item-3 {
+        float: left;
+        width: 746px;
+        height: 320px;
+      }
+    }
+
+  }
+}
+
